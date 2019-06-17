@@ -31,7 +31,7 @@ public class IUserServiceImpl implements IUserSevice {
     public List<SimpleGrantedAuthority> getauthorities(List<Role> roles){
         List<SimpleGrantedAuthority> list =new ArrayList<>();
         for (Role roless: roles) {
-            list.add(new SimpleGrantedAuthority("ROLE_"+roless.getRoleName().toUpperCase()));
+            list.add(new SimpleGrantedAuthority("ROLE_"+roless.getRoleName()));
         }
         return list;
     }
