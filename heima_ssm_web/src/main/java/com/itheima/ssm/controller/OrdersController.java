@@ -41,6 +41,8 @@ public class OrdersController {
         Orders list=iOrdersService.findById(orderId);
         m.setViewName("orders-show");
         m.addObject("orders",list);
+        System.out.println("sss");
         return m;
+
     }
 }
