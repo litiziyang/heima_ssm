@@ -22,6 +22,8 @@ public class IProductServicceImpl implements IProductService {
     @Override
     @Transactional
     public void save(Product product) {
+
+
         iProductDao.save(product);
     }
 }
