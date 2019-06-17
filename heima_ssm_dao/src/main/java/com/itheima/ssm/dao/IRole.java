@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface IRole {
 
-    @Select("select * from role where id in(select roleId from users_role where roleId=#{userId})  ")
+    @Select("select * from role where id in(select roleId from users_role where userId=#{userId})  ")
     List<Role> findById(String userId);
 }
