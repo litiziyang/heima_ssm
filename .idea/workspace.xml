@@ -107,8 +107,8 @@
       <file leaf-file-name="OrdersController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../heima_ssm/heima_ssm_web/src/main/java/com/itheima/ssm/controller/OrdersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+            <state relative-caret-position="742">
+              <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -527,7 +527,7 @@
       <workItem from="1560650167745" duration="3213000" />
       <workItem from="1560670519998" duration="3323000" />
       <workItem from="1560684597452" duration="3541000" />
-      <workItem from="1560733326333" duration="3806000" />
+      <workItem from="1560733326333" duration="4014000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1560737212865</created>
@@ -536,11 +536,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560737212865</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第一次提交&#10;添加了一个输出语句">
+      <created>1560737665723</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560737665723</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49903000" />
+    <option name="totallyTimeSpent" value="50111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -584,7 +591,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
+    <MESSAGE value="第一次提交&#10;添加了一个输出语句" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一次提交&#10;添加了一个输出语句" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -984,8 +992,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../heima_ssm/heima_ssm_web/src/main/java/com/itheima/ssm/controller/OrdersController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        <state relative-caret-position="742">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
