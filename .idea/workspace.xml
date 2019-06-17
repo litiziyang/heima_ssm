@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff8e4bd6-6bc7-4e0c-8012-c47f152ba2f6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../heima_ssm/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../heima_ssm/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../heima_ssm/heima_ssm_web/src/main/java/com/itheima/ssm/controller/OrdersController.java" afterPath="$PROJECT_DIR$/../heima_ssm/heima_ssm_web/src/main/java/com/itheima/ssm/controller/OrdersController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -527,7 +526,7 @@
       <workItem from="1560650167745" duration="3213000" />
       <workItem from="1560670519998" duration="3323000" />
       <workItem from="1560684597452" duration="3541000" />
-      <workItem from="1560733326333" duration="4346000" />
+      <workItem from="1560733326333" duration="5055000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1560737212865</created>
@@ -550,11 +549,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560737896901</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="删除了输出语句">
+      <created>1560738186355</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560738186355</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50443000" />
+    <option name="totallyTimeSpent" value="51152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -600,7 +606,8 @@
     <MESSAGE value="第一次提交" />
     <MESSAGE value="第一次提交&#10;添加了一个输出语句" />
     <MESSAGE value="第一次提交&#10;添加了一个输&#10;&#10;修改sssss" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次提交&#10;添加了一个输&#10;&#10;修改sssss" />
+    <MESSAGE value="删除了输出语句" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除了输出语句" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
