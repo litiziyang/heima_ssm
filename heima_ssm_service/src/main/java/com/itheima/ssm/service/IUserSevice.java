@@ -12,4 +12,6 @@ public interface IUserSevice extends UserDetailsService {
     List<UserInfo> findAll(int page,int size);
 
     void save(UserInfo userInfo);
+
+    UserInfo findById(String id);
 }

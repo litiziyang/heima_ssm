@@ -31,4 +31,12 @@ public class UserController {
     iUserSevice.save(userInfo);
     return "redirect:findAll.do";
     }
+
+    @RequestMapping("findById.do")
+    public String findById(@RequestParam(value = "id",required = true)String id,Model model){
+       UserInfo userInfo=  iUserSevice.findById(id);
+       model.addAttribute("user",userInfo);
+
+    return "user-show";
+    }
 }

@@ -9,6 +9,16 @@ public class Permission {
     private String url;
     private List<Role> roles;
 
+    public Permission(String id, String permissionName, String url, List<Role> roles) {
+        this.id = id;
+        this.permissionName = permissionName;
+        this.url = url;
+        this.roles = roles;
+    }
+
+    public Permission() {
+    }
+
     public String getId() {
         return id;
     }

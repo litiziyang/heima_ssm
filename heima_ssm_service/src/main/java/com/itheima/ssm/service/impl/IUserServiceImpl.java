@@ -28,7 +28,7 @@ public class IUserServiceImpl implements IUserSevice {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         UserInfo userinfo = iUserDao.findByUsername(username);
-        User user = new User(userinfo.getUsername(),"{noop}"+userinfo.getPassword(),userinfo.getStatus()==0?false:true,true,true,true,getauthorities(userinfo.getRoles()));
+        User user = new User(userinfo.getUsername(),userinfo.getPassword(),userinfo.getStatus()==0?false:true,true,true,true,getauthorities(userinfo.getRoles()));
         return user;
     }
 
@@ -55,5 +55,12 @@ public class IUserServiceImpl implements IUserSevice {
         String encode = bCryptPasswordEncoder.encode(userInfo.getPassword());
         userInfo.setPassword(encode);
         iUserDao.save(userInfo);
+    }
+
+    @Override
+    public UserInfo findById(String id) {
+       UserInfo userInfo= iUserDao.findById(id);
+
+        return  userInfo;
     }
 }
