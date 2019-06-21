@@ -34,10 +34,25 @@ public class IUserServiceImpl implements IUserSevice {
 
     public List<SimpleGrantedAuthority> getauthorities(List<Role> roles){
         List<SimpleGrantedAuthority> list =new ArrayList<>();
+        if(roles.size()==0||roles==null){
+
+            return null;
+        }
+
         for (Role roless: roles) {
             list.add(new SimpleGrantedAuthority("ROLE_"+roless.getRoleName()));
         }
         return list;
+    /*    try {
+            for (Role roless: roles) {
+                list.add(new SimpleGrantedAuthority("ROLE_"+roless.getRoleName()));
+            }
+            return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+*/
     }
 
 
@@ -62,5 +77,13 @@ public class IUserServiceImpl implements IUserSevice {
        UserInfo userInfo= iUserDao.findById(id);
 
         return  userInfo;
+    }
+
+    @Override
+    @Transactional
+    public void saveUserAndRole(String id, String[] ids) {
+        for (String s : ids) {
+            iUserDao.saveUserAndRole(id,s);
+        }
     }
 }

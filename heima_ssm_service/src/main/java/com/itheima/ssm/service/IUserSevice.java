@@ -14,4 +14,6 @@ public interface IUserSevice extends UserDetailsService {
     void save(UserInfo userInfo);
 
     UserInfo findById(String id);
+
+    void saveUserAndRole(String id, String[] ids);
 }

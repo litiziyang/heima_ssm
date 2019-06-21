@@ -24,4 +24,10 @@ private Ipermission ipermission;
     public void save(Permission permission) {
         ipermission.save(permission);
     }
+
+    @Override
+    public List<Permission> findById(String id) {
+        List<Permission>list= ipermission.findByIdOut(id);
+        return list;
+    }
 }

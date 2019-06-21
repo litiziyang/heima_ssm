@@ -19,6 +19,13 @@ public interface IRole {
 @Select("select * from Role")
     List<Role> findAll();
 
-@Insert("insert into role(roleName,roleDesc) values('${roleName}','${roleDesc}')")
+@Insert("insert into role(roleName,roleDesc) values(#{roleName},#{roleDesc})")
     void save(Role role);
+
+@Select("select * from Role where id not in(Select roleId from users_role where userId=#{id})")
+    List<Role> findByUserId(String id);
+@Select("select * from Role where id=#{id}")
+    Role findBynotId(String id);
+@Insert("insert into role_Permission(roleId,permissionId) values(#{id},#{s})")
+    void addRoleTopermission(@Param("id") String id, @Param("s") String s);
 }

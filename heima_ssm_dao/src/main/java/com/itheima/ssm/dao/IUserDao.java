@@ -36,4 +36,6 @@ public interface IUserDao {
 
             })
     UserInfo findById(String id);
+@Insert("insert into users_role values(#{arg0},#{arg1})")
+    void saveUserAndRole(String id, String s);
 }

@@ -25,4 +25,24 @@ public class IRoleServiceImpl implements IRoleService {
     public void save(Role role) {
         iRole.save(role);
     }
+
+    @Override
+    public List<Role> findById(String id) {
+        List<Role> list=iRole.findByUserId(id);
+        return list;
+    }
+
+    @Override
+    public Role findBynotId(String id) {
+        Role role=iRole.findBynotId(id);
+        return role;
+    }
+
+    @Override
+    public void addRoleTopermission(String id, String[] pid) {
+        for (String s : pid) {
+            iRole.addRoleTopermission(id,s);
+        }
+
+    }
 }

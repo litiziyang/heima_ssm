@@ -14,4 +14,6 @@ public interface Ipermission {
     List<Permission> findAll();
 @Insert("insert into permission(permissionName,url)values('${permissionName}','${url}')")
     void save(Permission permission);
+@Select("select * from Permission where id not in (select permissionId from role_Permission where roleId=#{id} )")
+    List<Permission> findByIdOut(String id);
 }

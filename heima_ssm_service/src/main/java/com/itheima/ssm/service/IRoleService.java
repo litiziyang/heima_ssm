@@ -10,4 +10,9 @@ public interface IRoleService {
     List<Role> findAll();
 
     void save(Role role);
+    List<Role> findById(String id);
+
+    Role findBynotId(String id);
+
+    void addRoleTopermission(String id, String[] pid);
 }

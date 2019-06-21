@@ -9,4 +9,6 @@ public interface IPermission {
     List<Permission> findAll();
 
     void save(Permission permission);
+
+    List<Permission> findById(String id);
 }
